@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.SCM.Stock.Business.PlugIn", "Kingdee.K3.SCM.Stock.Business.PlugIn\Kingdee.K3.SCM.Stock.Business.PlugIn.csproj", "{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

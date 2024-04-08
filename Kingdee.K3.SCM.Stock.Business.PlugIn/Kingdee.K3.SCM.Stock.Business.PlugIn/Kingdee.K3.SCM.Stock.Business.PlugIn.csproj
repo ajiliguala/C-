@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ADDB691-9689-4C10-BDD9-5A24F393AE9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Kingdee.K3.SCM</RootNamespace>
+    <AssemblyName>Kingdee.K3.SCM.Stock.Business.PlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.BOS.Business.Bill" />
+    <Reference Include="Kingdee.BOS.BusinessEntity" />
+    <Reference Include="Kingdee.BOS.Contracts" />
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.BOS.Model" />
+    <Reference Include="Kingdee.BOS.ServiceHelper" />
+    <Reference Include="Kingdee.BOS.VerificationHelper" />
+    <Reference Include="Kingdee.K3.BD.Business.PlugIn" />
+    <Reference Include="Kingdee.K3.BD.Common.Business.PlugIn" />
+    <Reference Include="Kingdee.K3.BD.ServiceHelper" />
+    <Reference Include="Kingdee.K3.Core" />
+    <Reference Include="Kingdee.K3.SCM.Business" />
+    <Reference Include="Kingdee.K3.SCM.Common.BusinessEntity" />
+    <Reference Include="Kingdee.K3.SCM.Contracts" />
+    <Reference Include="Kingdee.K3.SCM.Core" />
+    <Reference Include="Kingdee.K3.SCM.ServiceHelper" />
+    <Reference Include="Kingdee.K3.SCM.Web.Client" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\Business\PlugIn\StockTransferOutList.cs" />
+    <Compile Include="Stock\Business\PlugIn\AbcGroupMaterialEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\AdjustLotNo.cs" />
+    <Compile Include="Stock\Business\PlugIn\AppIdType.cs" />
+    <Compile Include="Stock\Business\PlugIn\AssembledAppEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\AssembledAppList.cs" />
+    <Compile Include="Stock\Business\PlugIn\AssembledAppUserParamEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\BatchMainFileEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\BatchMainFileList.cs" />
+    <Compile Include="Stock\Business\PlugIn\BillLotEditPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\BillMinuRowStyleController.cs" />
+    <Compile Include="Stock\Business\PlugIn\BomExpandSourceRowView.cs" />
+    <Compile Include="Stock\Business\PlugIn\ClearZeroInventory.cs" />
+    <Compile Include="Stock\Business\PlugIn\Common.cs" />
+    <Compile Include="Stock\Business\PlugIn\CONST_STK_StockBillTemplate.cs" />
+    <Compile Include="Stock\Business\PlugIn\ConvertCommonEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\ConvetBillUserParaEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\CycleCountPlanEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\CycleCountPlanList.cs" />
+    <Compile Include="Stock\Business\PlugIn\CycleCountTableEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\CycleCountTableList.cs" />
+    <Compile Include="Stock\Business\PlugIn\ExpenseApportionEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\FlexValuesComSetEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\ForceCheckChangeOrg.cs" />
+    <Compile Include="Stock\Business\PlugIn\InitInStockEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InitInStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\Init\InvAccountOnOffBuilderPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\Init\InvOperateBuildPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\Init\InvOperateGuideEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InStockEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\IntelligenceDataLicense.cs" />
+    <Compile Include="Stock\Business\PlugIn\IntelligenceDataLicenseRequest.cs" />
+    <Compile Include="Stock\Business\PlugIn\IntelligenceDataLicenseResponse.cs" />
+    <Compile Include="Stock\Business\PlugIn\IntelligenceDataLicenseResponsetInnerData.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvAccountOnOff.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvCheckResult.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvDetailFilterEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryAdjust.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryCheck.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryForBasicBillList.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryList.cs" />
+    <Compile Include="Stock\Business\PlugIn\InventoryQuery.cs" />
+    <Compile Include="Stock\Business\PlugIn\Inventory\InvAgeSchemeEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\Inventory\InvAgeTaskEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\Inventory\InvAgeTaskList.cs" />
+    <Compile Include="Stock\Business\PlugIn\Inventory\InvAgeTaskOpEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\Inventory\InventoryListExt.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvInitBillEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvInitBillList.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvInitOnOff.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvJoinQueryEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvLotQueryList.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvSumQueryList.cs" />
+    <Compile Include="Stock\Business\PlugIn\InvUserSettingEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockOperate.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStockLogList.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStockOperate.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStock\LockOperateBuilderPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStock\LockStockOperateBuilderPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\LockStock\UnLockOperateBuilderPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotAdjUserParaEditcs.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotAdjustEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotAdjustList.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotCodeField.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotCodeItemEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotCodeItemList.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotCodeRuleEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotQueryEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\LotRuleCodeSetEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\MaterialABCGroupEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\MaxStockAlarmMessagePlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\MaxStockSolutionEditPlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\MinStockAlarmMessagePlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\MinStockSolutionEditPlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\MisDeliBillTypeParamEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\MisDeliveryEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\MisDeliveryList.cs" />
+    <Compile Include="Stock\Business\PlugIn\MTrackSerialMainFileEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\MTrackSerialMainFileList.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMConvertSet.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMInStockEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMInStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMInStockRTNEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMInStockRTNList.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMInStockUserParamEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMReceiveEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\OEMReceiveList.cs" />
+    <Compile Include="Stock\Business\PlugIn\OutInBillGroupManage.cs" />
+    <Compile Include="Stock\Business\PlugIn\OutInStockManager.cs" />
+    <Compile Include="Stock\Business\PlugIn\OutStockApplyEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\OutStockApplyList.cs" />
+    <Compile Include="Stock\Business\PlugIn\PromptCheckChangeOrg.cs" />
+    <Compile Include="Stock\Business\PlugIn\PurMrb\StockTemplateEdit_PurMrb.cs" />
+    <Compile Include="Stock\Business\PlugIn\PurReceive\StockTemplateEdit_PurReceive.cs" />
+    <Compile Include="Stock\Business\PlugIn\ReorderPointAlarmMessagePlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\ReorderPointSolutionEditPlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\SafetyStockAlarmMessagePlugln.cs" />
+    <Compile Include="Stock\Business\PlugIn\SafetyStockSolutionEditPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\SaftyStockSetBuilder.cs" />
+    <Compile Include="Stock\Business\PlugIn\SaftyStockSetEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\SelectOrderInfo.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpInStockEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpInStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpOutStockEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpOutStockList.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpPickMtrlEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpPickMtrlList.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpReturnMtrlEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\SP\SpReturnMtrlList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StartSotck.cs" />
+    <Compile Include="Stock\Business\PlugIn\StatusConvertEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StatusConvertList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StkDataManage\DelStkBackupData.cs" />
+    <Compile Include="Stock\Business\PlugIn\StkDataManage\STKBackRestDataTable.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockAlert\StockAlertBatchNew.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockAlert\StockAlertEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockAlert\StockAlertList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockBillHSCostEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockBillTemplateEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockBillUserParamEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\MinusInvWarnPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\MinusInvWarnQuickFilterPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\SafeStockQFilterPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\SafeStockWarnPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\ShelfLiftQFilterPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\ShelfLiftWarnPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\StockConsoleCommon.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\StockNegativeQFilterPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConsole\StockNegativeWarnPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConvertEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockConvertList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountEffectEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountEffectList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountInputEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountInputList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountLossEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountSchemeEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCountSchemeList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockCount\StockCountInputBuilderPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockMiscellaneousEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockMiscellaneousList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockParameterEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialBatchFileEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialBatchSelectorEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialMainFileEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialMainFileList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialProductEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockSerialViewList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTranser\StockTransDrtBillTypeParmSetEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTranser\StockTransferApplyEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTranser\StockTransferApplyList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTranser\StockTransferLocExtEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferDirectEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferDirectList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferInEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferInList.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferOutEdit.cs" />
+    <Compile Include="Stock\Business\PlugIn\StockTransferOutOperationCommon.cs" />
+    <Compile Include="Stock\Business\PlugIn\UnLockStockOperate.cs" />
+    <Compile Include="Stock\Business\PlugIn\WarnSelfLifeAlarmMessagePlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\WarnSelfLifeAlarmSolutionEditPlugIn.cs" />
+    <Compile Include="Stock\Business\PlugIn\Warn\WarnSelfLifeAlarmMessageShowPlugIn.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
