@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excel_fromal", "excel_fromal.csproj", "{873E65B9-E734-47D0-8608-45EE0B3E1133}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{873E65B9-E734-47D0-8608-45EE0B3E1133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873E65B9-E734-47D0-8608-45EE0B3E1133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873E65B9-E734-47D0-8608-45EE0B3E1133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873E65B9-E734-47D0-8608-45EE0B3E1133}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E76CC636-E6BA-4A07-B56E-AD4F366CD13A}
+	EndGlobalSection
+EndGlobal
