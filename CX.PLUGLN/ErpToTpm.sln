@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpToTpm", "Kingdee.CX.PlugIn\ErpToTpm.csproj", "{124164C3-4F97-4D2B-955E-49A6DFC3C360}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09BBCAB5-5F2D-4C83-94BC-E55BD02F99C1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{124164C3-4F97-4D2B-955E-49A6DFC3C360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124164C3-4F97-4D2B-955E-49A6DFC3C360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124164C3-4F97-4D2B-955E-49A6DFC3C360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124164C3-4F97-4D2B-955E-49A6DFC3C360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2950195F-70DD-4287-990B-2963CE3C9CFD}
+	EndGlobalSection
+EndGlobal
