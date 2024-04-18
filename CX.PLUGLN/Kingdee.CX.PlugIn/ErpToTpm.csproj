@@ -71,8 +71,34 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AP_Payable_Service.cs" />
+    <Compile Include="AP_Payable_UnAudit_Service.cs" />
+    <Compile Include="AP_PAYBILL_Service.cs" />
+    <Compile Include="AP_PAYBILL_UnAudit_Service.cs" />
+    <Compile Include="BD_Supplier_Service.cs" />
+    <Compile Include="BomChild.cs" />
+    <Compile Include="BomQueryForward_CustomService.cs" />
+    <Compile Include="BookBalance.cs" />
+    <Compile Include="BookBalanceRem.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CN_PAYAPPLY_Service.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="OperationMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TEST.cs" />
+    <Compile Include="PUR_MRB_Service.cs" />
+    <Compile Include="PUR_MRB_UnAudit_Service.cs" />
+    <Compile Include="PUR_PurchaseOrder_Service.cs" />
+    <Compile Include="PUR_ReceiveBill_Service.cs" />
+    <Compile Include="PUR_Requisition_Service.cs" />
+    <Compile Include="QM_InspectBill_Service.cs" />
+    <Compile Include="ResponseInfo.cs" />
+    <Compile Include="SrmResponseInfo.cs" />
+    <Compile Include="SRMStatus.cs" />
+    <Compile Include="STK_InStock_Service.cs" />
+    <Compile Include="STK_InStock_SRM_Service.cs" />
+    <Compile Include="STK_InStock_UnAudit_Service.cs" />
+    <Compile Include="SUBPrdStatisRpt.cs" />
+    <Compile Include="UpdateSrmStatus_Service.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
